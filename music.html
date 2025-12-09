@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        body {
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            background-image: url('backimg2.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: "Pretendard";
+            background-color: #fafafa;
+            overflow-x: hidden;
+        }
+
+
+        header {
+         width: 100%;
+         height: 60px;
+         margin: 0 auto;
+         background-color: #F8F7EE;
+        }
+
+
+        li {
+            list-style-type: none;
+        }
+
+        #logo {
+            float: left;
+            margin-left: 110px;
+            margin-top: 5px;
+        }
+
+          #main_img {
+         display: block;
+         width: 100%;
+         height: 397px;
+         background-image: url("hib3.png");
+         background-repeat: no-repeat;
+         background-position: top center;
+         background-size: cover;
+         
+        }
+
+       #menu {
+          clear: both;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          background-color: #F8F7EE;
+          height: 50px;
+          margin: 0;
+          padding: 0;
+          gap: 40px;
+        }
+
+
+        #menu a {
+        text-decoration: none;
+        }
+        
+        .item {
+            margin: 0px 40px 0 40px;
+        }
+
+        .item a:link {
+            text-decoration: none;
+            color: #4E8682;
+            font-family: "AppleSDGothicNeoB00";
+            font-size: 22px;
+        }
+        .item a:visited {
+            text-decoration: none;
+            color: #B3B3B3;
+        }
+        .item a:hover {
+            text-decoration: none;
+            color: #CC7474;
+        }
+        .item a:active {
+            text-decoration: none;
+            color: black;
+        }
+
+         #contents {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+          #main_contents h3 {
+            font-size: 26px;    
+            margin-top: 150px;
+            text-align: center;
+            font-family: "Pretendard";
+            font-weight: 600;
+            color: #4E8682;
+        }
+
+         #main_contents h4 {
+            font-size: 18px;    
+            margin-top: 60px;
+            text-align: center;
+            font-family: "Pretendard";
+            font-weight: 500;
+            color: #4E8682;
+         }
+
+        #main_contents p {
+            margin-top: 40px;
+            font-size: 14px;
+            text-align: center;
+            font-family: "Pretendard";
+            font-weight: 400;
+            color: #121212;
+            margin-bottom: 80px;
+
+        }
+
+
+        h5 {
+            font-size: 28px;    
+            margin-top: 120px;
+            margin-left: 110px;
+            text-align: left;
+            font-family: "Pretendard";
+            font-weight: 600;
+            color: #2F5350;
+        }
+
+
+        .video-section {
+           display: flex;
+           justify-content: center; 
+           margin: 40px 0;       
+        }
+
+        .video-section video {
+           width: 80%;        
+           max-width: 1000px;  
+           height: auto;      
+           box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+          .content-box {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-left: 110px;
+        margin-right: 110px;
+        align-items: flex-start;
+        gap: 80px;
+        width: fit-content;
+        }
+
+         .content-img {
+        width: 680px;
+        height: auto;
+        flex-shrink: 0;
+        }
+
+       
+         
+
+         .content-text h6 {
+            font-size: 20px;
+            text-align:left;
+            margin-top: 10px;
+            font-family: "Pretendard";
+            font-weight: 600;
+            color: #4E8682;
+        }
+
+        .content-text p {
+            margin-top: 30px;
+            font-size: 14px;
+            text-align:left;
+            font-family: "Pretendard";
+            font-weight: 400;
+            color: #121212;
+        }
+
+    .media-section {
+    display: flex;
+    justify-content: space-between; 
+    margin-left: 110px;   
+    margin-right: 110px;     
+    margin-top: 25px;       
+    gap: 40px;                       
+    flex-wrap: wrap;               
+    margin-top: 40px;
+}
+
+.media-item {
+    flex: 1 1 26%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.media-item img {
+    width: auto;
+    height: 400px;
+    border-radius: 8px;
+}
+
+.caption {
+    font-size: 14px;
+    color: #121212;
+    margin-top: 12px;
+}
+
+.audio-player {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.audio-player audio {
+    width: 100%;
+    max-width: 300px; 
+}
+
+
+
+
+
+      .footer {
+       width: 100%;
+       height: 200px;
+       background-color: #F8F7EE;
+       padding: 0;
+       margin-top: 120px;
+       display: flex;
+       align-items: flex-start;
+       flex-direction: column;
+       flex-wrap: wrap; 
+       box-sizing: border-box;
+       }
+
+       .footer-left {
+       display: flex;
+       flex-direction: column;
+       }
+
+       .footer-logo {
+        width: 150px;
+        float: left;
+        margin: 30px 110px  ;
+        display: block;
+       }
+
+       .footer-info p {
+        float: left;
+        margin-top: 5px;
+        margin-left: 110px;
+        color: #4E8682;
+        font-size: 12px;
+        }
+        
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;       
+  gap: 20px;
+}
+
+.footer-links li {
+    margin-top: 80px;
+    margin-left: 100px;
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #4E8682;
+  font-family: "AppleSDGothicNeoB00", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #CC7474;
+}
+        @media only screen and (max-width: 620px) {
+    .container {
+        display: flex;       
+        flex-direction: column;  
+    }
+
+   .item, #contents {
+        width: 100%;    
+        margin: 0;      
+    }
+
+     #main_img {
+        height: 200px; 
+        background-position: center center;
+    }
+
+     #menu {
+        flex-direction: column;   
+        height: auto;             
+        gap: 10px;              
+        padding: 20px 0;        
+    }
+
+    .item a {
+        font-size: 18px;       
+    }
+
+       header, section, footer {
+        width: 100%;
+    }
+
+     .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left {
+        margin: 0;
+    }
+
+    .footer-info p {
+        margin: 10px 0;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0 0 0;
+    }
+
+    .footer-links li {
+        margin: 0;
+    }
+
+
+
+      #logo {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        width: auto; 
+    }
+
+    #logo img {
+        width: 80%;        
+        max-width: 150px;  
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    p, h1, h2, h3, h4, h6 {
+        max-width: 100%;
+        line-height: 1.5;
+        word-break: keep-all;
+    }
+
+      h5 {
+        font-size: 28px;
+        margin-left: 20px;  
+        margin-right: 20px;
+        text-align: left;
+        margin-top: 60px;
+    }
+
+    img {
+        max-width: 100%;  
+        height: auto;
+    }
+
+    .video-player video {
+        width: 100%;   
+        height: auto;
+    }
+
+ @media only screen and (max-width: 1024px) {
+    .media-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+      .media-container {
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+    }
+    .media-box img,
+    .media-box video {
+        width: 100%;   
+        height: auto; 
+        object-fit: contain;  
+    }
+    .media-item {
+        height: auto;  
+    }
+
+    .media-section {
+        flex-direction: column;
+        margin: 0 20px;
+        gap: 20px; 
+    }
+
+      .content-box {
+        flex-direction: column;
+        margin: 20px; 
+        gap: 20px;
+    }
+    .content-img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+        </style>
+
+</head>
+<body>
+    
+    <header>
+
+     <div id="logo">
+         <a href="index.html">
+         <img src="MAINLOGO.png"></a>
+     </div>
+
+     </header>
+
+   
+     <section id="main_img">
+    </section>
+
+    <ul id="menu">
+    <li class="item"><a href="Peacespot.html">Peace spot</a></li>
+    <li class="item"><a href="Play.html">Play</a></li>
+    <li class="item"><a href="peacepiece.html">Peace piece</a></li>
+    <li class="item"><a href="music.html">Music</a></li>
+    <li class="item"><a href="peacecource.html">Peace course</a></li>
+</ul>
+
+ <section id="content">
+        <div id="main_contents">
+            <h3>Music</h3>
+           <h4>음악을 들으면 힐링이 [ 된다 ] </h4>
+            <p> 음악을 들을 때 실제로 도파민, 옥시토신이 분비되어 즐거움에 관한 뇌 영역이 활성화된다. <br>
+                음악은 잠시 그 멜로디에 빠지게 되기도 하고, 가사에 집중해보면 위로가 되기도 한다. 나는 그래서 다양한 음악을 <br>
+             듣는 편인 것 같다. 여러 장르가 다 좋다. 내가 가장 힐링이 필요할 때 듣는 노래는 백예린의 0310이다.<br>
+             그냥 이 노래를 들으면 추억도 생각나고, 뭔가 나른한, 차분해지는 느낌이라 좋아한다.</p>
+
+    
+        </div>
+    </section>
+
+    <section class="video-section">
+    <video controls autoplay loop muted>
+        <source src="0310.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</section>
+
+
+
+        
+<section id="content">
+        <div id="main_contents">
+            <h3>Songs I’m loving lately</h3>
+        </div>
+    </section>
+
+
+<section class="media-section">
+    <div class="media-item">
+        <img src="m1.png" alt="사진1">
+        <div class="caption">심아일랜드 -정신과에 가볼까</div>
+        <div class="audio-player">
+            <audio controls>
+                <source src="go.mp3" type="audio/mpeg">
+            </audio>
+              <div class="caption">친구의 추천으로 듣게 되었는데 사운드가 듣기 좋아서 자주 듣게 된다.</div>
+        </div>
+    </div>
+
+    <div class="media-item">
+        <img src="m2.png" alt="사진2">
+        <div class="caption">ENHYPEN -OUTSIDE</div>
+        <div class="audio-player">
+            <audio controls>
+                <source src="enhy.mp3" type="audio/mpeg">
+            </audio>
+              <div class="caption">좋아하는 가수의 노래는 언제 어떤 노래를 들어도 기분이 좋아진다.</div>
+        </div>
+    </div>
+
+    <div class="media-item">
+        <img src="m3.png" alt="사진3">
+        <div class="caption">Miku -千本桜</div>
+        <div class="audio-player">
+            <audio controls>
+                <source src="miku.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+          <div class="caption">중독적이고 신나서 컨디션이 안 좋은 날 주로 듣는다.</div>
+    </div>
+</section>
+
+
+
+    <div class="clear"></div>
+
+   <footer class="footer">
+    <div class="footer-left">
+    <img src="MAINLOGO.png" alt="logo" class="footer-logo">
+
+    <div class="footer-info">
+     <p>나의 힐링 포인트를 정리하고 현실에서 실현하며 내가 나의 행복한 시간을 만들 수 있도록<br>
+     Pieces of peace pile up and become my own era<br>
+      이 웹사이트는 개인 프로젝트용 페이지입니다.
+      © 2025 Peacera. All rights reserved.
+      이미지 출처: 직접촬영</p>
+    </div>
+    </div>
+ 
+    <ul class="footer-links">
+      <li><a href="Peacespot.html">Peace spot</a></li>
+      <li><a href="Play.html">Play</a></li>
+      <li><a href="peacepiece.html">Peace piece</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="peacecource.html">peace course</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

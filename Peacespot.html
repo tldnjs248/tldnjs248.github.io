@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        body {
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            background-image: url('backimg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: "Pretendard";
+            background-color: #fafafa;
+            overflow-x: hidden;
+        }
+
+
+        header {
+         width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  background-color: #F8F7EE;
+        }
+
+
+        li {
+            list-style-type: none;
+        }
+
+        #logo {
+            float: left;
+            margin-left: 110px;
+            margin-top: 5px;
+        }
+
+          #main_img {
+         display: block;
+         width: 100%;
+         height: 397px;
+         background-image: url("hib3.png");
+         background-repeat: no-repeat;
+         background-position: top center;
+         background-size: cover;
+         
+        }
+
+       #menu {
+          clear: both;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          background-color: #F8F7EE;
+          height: 50px;
+          margin: 0;
+          padding: 0;
+          gap: 40px;
+        }
+
+
+        #menu a {
+        text-decoration: none;
+        }
+        
+        .item {
+            margin: 0px 40px 0 40px;
+        }
+
+        .item a:link {
+            text-decoration: none;
+            color: #4E8682;
+            font-family: "AppleSDGothicNeoB00";
+            font-size: 22px;
+        }
+        .item a:visited {
+            text-decoration: none;
+            color: #B3B3B3;
+        }
+        .item a:hover {
+            text-decoration: none;
+            color: #CC7474;
+        }
+        .item a:active {
+            text-decoration: none;
+            color: black;
+        }
+
+         #contents {
+            width: 100%;
+            margin: 0 auto;
+            background-color: #F8F7EE;
+            border: solid 1px #6CB1A4;
+        }
+
+          #main_contents h3 {
+            font-size: 26px;    
+            margin-top: 150px;
+            text-align: center;
+            font-family: "Pretendard";
+            font-weight: 600;
+            color: #4E8682;
+        }
+
+         #main_contents h4 {
+            font-size: 18px;    
+            margin-top: 60px;
+            text-align: center;
+            font-family: "Pretendard";
+            font-weight: 500;
+            color: #4E8682;
+            
+         }
+
+        #main_contents p {
+            margin-top: 40px;
+            font-size: 14px;
+            text-align: center;
+            font-family: "Pretendard";
+            font-weight: 400;
+            color: #121212;
+            margin-bottom: 80px;
+            
+
+        }
+
+
+        h5 {
+            font-size: 28px;    
+            margin-top: 120px;
+            margin-left: 110px;
+            text-align: left;
+            font-family: "Pretendard";
+            font-weight: 600;
+            color: #2F5350;
+        }
+
+          .content-box {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-left: 110px;
+        margin-right: 110px;
+        align-items: flex-start;
+        gap: 80px;
+        width: fit-content;
+        
+        }
+
+         .content-img {
+        width: 680px;
+        height: auto;
+        flex-shrink: 0;
+        }
+
+         .content-text h6 {
+            font-size: 20px;
+            text-align:left;
+            margin-top: 10px;
+            font-family: "Pretendard";
+            font-weight: 600;
+            color: #4E8682;
+        }
+
+        .content-text p {
+            margin-top: 30px;
+            font-size: 14px;
+            text-align:left;
+            font-family: "Pretendard";
+            font-weight: 400;
+            color: #121212;
+        }
+
+ .media-container { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    margin: 0 110px; 
+    
+ }
+
+       .media-box {
+     flex: 0 0 23%;  /* 4개 가로 정렬 */
+    text-align: center;
+}
+       
+       
+       .media-item {
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+
+   .media-box img,
+.media-box video {
+    height: 300px;
+    width: auto;          
+    object-fit: cover;
+    object-fit: cover;
+    display: block;        
+    margin: 0 auto; 
+}
+
+           .caption {
+            margin-top: 12px;
+         font-size: 14px;
+         color: #121212;
+          font-family: "Pretendard";
+        text-align: center;
+}
+
+
+
+
+
+
+      .footer {
+       width: 100%;
+       height: 200px;
+       background-color: #F8F7EE;
+       padding: 0;
+       margin-top: 150px;
+       display: flex;
+       align-items: flex-start;
+       flex-direction: column;
+       flex-wrap: wrap; 
+       box-sizing: border-box;
+       }
+
+       .footer-left {
+       display: flex;
+       flex-direction: column;
+       }
+
+       .footer-logo {
+        width: 150px;
+        float: left;
+        margin: 30px 110px  ;
+        display: block;
+       }
+
+       .footer-info p {
+        float: left;
+        margin-top: 5px;
+        margin-left: 110px;
+        color: #4E8682;
+        font-size: 12px;
+        }
+        
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;       
+  gap: 20px;
+}
+
+.footer-links li {
+    margin-top: 80px;
+    margin-left: 100px;
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #4E8682;
+  font-family: "AppleSDGothicNeoB00", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #CC7474;
+}
+        @media only screen and (max-width: 620px) {
+    .container {
+        display: flex;       
+        flex-direction: column;  
+    }
+
+   .item, #contents {
+        width: 100%;    
+        margin: 0;      
+    }
+
+     #main_img {
+        height: 200px; 
+        background-position: center center;
+    }
+
+     #menu {
+        flex-direction: column;   
+        height: auto;             
+        gap: 10px;              
+        padding: 20px 0;        
+    }
+
+    .item a {
+        font-size: 18px;       
+    }
+
+       header, section, footer {
+        width: 100%;
+    }
+
+     .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left {
+        margin: 0;
+    }
+
+    .footer-info p {
+        margin: 10px 0;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0 0 0;
+    }
+
+    .footer-links li {
+        margin: 0;
+    }
+
+
+
+      #logo {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        width: auto; 
+    }
+
+    #logo img {
+        width: 80%;        
+        max-width: 150px;  
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    p, h1, h2, h3, h4, h6 {
+        max-width: 100%;
+        line-height: 1.5;
+        word-break: keep-all;
+    }
+
+      h5 {
+        font-size: 28px;
+        margin-left: 20px;  
+        margin-right: 20px;
+        text-align: left;
+        margin-top: 60px;
+    }
+
+    img {
+        max-width: 100%;  
+        height: auto;
+    }
+
+ @media only screen and (max-width: 1024px) {
+    .media-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+      .media-container {
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+    }
+    .media-box img,
+    .media-box video {
+        width: 100%;   
+        height: auto; 
+        object-fit: contain;  
+    }
+    .media-item {
+        height: auto;  
+    }
+
+      .content-box {
+        flex-direction: column;
+        margin: 20px; 
+        gap: 20px;
+    }
+    .content-img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+        </style>
+
+</head>
+<body>
+    
+    <header>
+
+     <div id="logo">
+        <a href="index.html">
+         <img src="MAINLOGO.png"></a>
+     </div>
+
+     </header>
+
+   
+     <section id="main_img">
+    </section>
+
+    <ul id="menu">
+    <li class="item"><a href="Peacespot.html">Peace spot</a></li>
+    <li class="item"><a href="Play.html">Play</a></li>
+    <li class="item"><a href="peacepiece.html">Peace piece</a></li>
+    <li class="item"><a href="music.html">Music</a></li>
+    <li class="item"><a href="peacecource.html">Peace course</a></li>
+</ul>
+
+ <section id="content">
+        <div id="main_contents">
+            <h3>Peace spot</h3>
+           <h4>내가 좋아하는, 그리고 힐링이 필요할 때 찾는 공간들</h4>
+            <p>기분이 좋아지는 장소가 있다는 건 참 행복한 일이다.
+좋아하는 사람들과 함께라면 어디든 좋지만,<br>
+그중에서도 특히 마음이 더 편안해지는 곳들을 모아 정리했다.</p>
+        </div>
+    </section>
+
+     <div class="clear"></div>
+
+     <h5>#을지로</h5>
+        
+        <div class="content-box">
+  <img src="elji.png" class="content-img">
+
+  <div class="content-text">
+    <h6>적당히 여유롭게 시간을 보낼 수 있는 장소</h6>
+    <p>을지로는 감성적이면서도 트렌디한 곳이다. 성수나 홍대에 비해서 사람이 많지 않아서 더욱 좋다.
+       바쁘게 돌아다니기 보다, 여유로운 하루를 보내고 싶은 날에는 을지로를 가게 된다.
+       물론 맛집들은 웨이팅 할 각오를 해야 한다. 그래도 웨이팅 걸어두고 청계천을 천천히 걸으면
+       되기 때문에 웨이팅이 있어도 스트레스받지 않고 시간을 즐길 수 있다. </p>
+
+    <p>내가 을지로라는 공간을 좋아하는 가장 큰 이유는 청계천이다. 유명한 이유가 있다.
+       따듯한 날씨에도 추운 날씨에도 풍경이 보기가 좋다. 더운 날에는 청계천에서 발 담그는 사람들이 많은데 
+       나도 나중에 해보고 싶었다. 좀 감성타고 싶은 날엔 책을 가져가도 좋을 것 같다. 생각해 보니 책이 없지만.
+       분위기 좋은 가게들도 많다. 너무 시끄럽지 않고 맛있는 음식들을 파는 가게들을 좋아해서 을지로를
+       더 자주 가게 되는 것도 있는 것 같다. 조금 아쉬운 점이 있다면 구경 할 수 있는 요소가 많지는 않아서 
+       을지로에서만 하루를 보내는 게 지루하게 느껴질 수 있다. 그래도 분위기 좋은 카페에서 여유롭게 2시간, 
+       청계천 걸으며 여유롭게 1시간, 길거리 걸으며 올디스 타코 먹어주며 여유롭게 1시간, 근사한 다이닝 바에서 
+       2시간 보내면 아주 여유롭고 평화로운 하루를 보낼 수 있다. 여유롭고 편안한 시간을 보낼 수 있어서
+       시험이 끝나면 또 한번 갈 것 같은 곳이다.
+       </p>
+  </div>
+</div>
+
+
+
+
+ <h5>#망원</h5>
+        
+        <div class="content-box">
+  <img src="mangw.png" class="content-img">
+
+  <div class="content-text">
+    <h6>알차고 다양하게 하루를 보낼 수 있는 장소</h6>
+    <p>망원은 분위기가 좋은 장소이다. 모든 가게들, 그냥 집조차도 감성 있고 분위기 좋아 보이는 곳인 것 같다.
+       망원에는 시장도 있고, 빈티지 숍도 많다, 가끔 소품 숍도 있어서 구경할 것이 꽤 많다. 
+       물론 검색을 해가며 찾아봐야 보이는 곳이 많지만, 한 곳 한 곳 찾아가는 재미가 있다고 생각하면 또 즐겁다. 거리에 있는 가게들 
+       하나 하나가 특색있고 분위기가 좋아서, 자주 가도 질릴 것 같지 않고 한 곳 한 곳 방문해보고 싶은 곳이다.</p>
+
+    <p>내가 망원이라는 공간을 좋아하는 데에는 내가 의류나 아기자기한 소품들에 관심도 많고, 잘 꾸며놓은 가게를 가는 것도 
+        즐거워하기 때문인 것 같다. 그런 장소가 많은데 왜 망원이냐고 한다면 망원은 조금 더 빈티지한 맛이 있다.
+        내가 망원에 갔던 날들에 별자리 운세가 1등이었던 건지 사람이 많지 않고, 유명 맛집에 가도 웨이팅이 없던 기억 때문에
+        망원이 더 좋아진 것도 있다. 또 망원역에서 20분 정도 걸으면 망원 한강공원에 갈 수 있어서, 바쁘게 돌아다니는 것이 피곤해진다면 
+        망원 한강공원으로 가서 한강을 즐길 수 있다는 점도 있다. 망원에서도 특히 빈티지 숍 구경이 꽤 즐거웠다. 지금 생각하니 망원이라는 장소가 
+        즐거운 건지 망원에서 놀며 친구와 함께 하는 행위가 즐거웠던 건지 조금 헷갈리지만.. 그래도 망원에서 특히 할 수 있는 일들이라고 생각한다.
+        분위기 좋은 카페에 가서 좋아하는 디저트를 먹고, 빈티지 숍 구경도 하며 친구와 옷 보며 품평하고, 제일 맛있는 가게를 찾아 저녁을 먹고,
+        역으로 가는 길에 망원 시장에서 오뎅을 서서 먹으면 그날 하루가 그렇게 행복할 수가 없다. </p>
+  </div>
+</div>
+
+<h5>#바다</h5>
+
+<div class="media-container">
+
+    <div class="media-box">
+        <div class="media-item">
+            <img src="sea1.png">
+        </div>
+        <div class="caption">동해 해돋이 본 날<br> 뭔가 뭉클해지는 느낌이다.</div>
+    </div>
+
+    <div class="media-box">
+        <div class="media-item">
+            <video src="sea3.mp4" muted autoplay loop></video>
+        </div>
+        <div class="caption">친구와 부산 광안리 <br> 밤바다는 고요해서 좋다.</div>
+    </div>
+
+    <div class="media-box">
+        <div class="media-item">
+            <img src="sea3.png">
+        </div>
+        <div class="caption">가족과 동해 간 날 <br> 
+          파도 소리도 좋고, 넓은 수평선을 보면 개방감이 느껴져서 좋다.</div>
+    </div>
+
+    <div class="media-box">
+        <div class="media-item">
+            <img src="sea4.png">
+        </div>
+        <div class="caption">밤바다에 비친 잔잔한 윤슬과 어둡고 깊게 보이는 바다가 <br>
+            세상의 모든 고민이 별것 아니라는 생각을 들게 해서 좋다.</div>
+    </div>
+
+</div>
+
+<h5>#한강 </h5>
+
+<div class="media-container">
+
+    <div class="media-box">
+        <div class="media-item">
+            <img src="han1.png">
+        </div>
+        <div class="caption">잠실 한강공원 가는 길</div>
+    </div>
+
+    <div class="media-box">
+        <div class="media-item">
+           <img src="han2.png">
+        </div>
+        <div class="caption">양화 한강공원</div>
+    </div>
+
+    <div class="media-box">
+        <div class="media-item">
+            <img src="han3.png">
+        </div>
+        <div class="caption">여의도 한강공원</div>
+    </div>
+
+    <div class="media-box">
+        <div class="media-item">
+            <img src="han4.png">
+        </div>
+        <div class="caption">선유도공원</div>
+    </div>
+
+</div>
+
+    <div class="clear"></div>
+
+   <footer class="footer">
+    <div class="footer-left">
+    <img src="MAINLOGO.png" alt="logo" class="footer-logo">
+
+    <div class="footer-info">
+     <p>나의 힐링 포인트를 정리하고 현실에서 실현하며 내가 나의 행복한 시간을 만들 수 있도록<br>
+     Pieces of peace pile up and become my own era<br>
+      이 웹사이트는 개인 프로젝트용 페이지입니다.
+      © 2025 Peacera. All rights reserved.
+      이미지 출처: 직접촬영</p>
+    </div>
+    </div>
+ 
+    <ul class="footer-links">
+      <li><a href="Peacespot.html">Peace spot</a></li>
+      <li><a href="Play.html">Play</a></li>
+      <li><a href="peacepiece.html">Peace piece</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="peacecource.html">peace course</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

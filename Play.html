@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        body {
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            background-image: url('backimg.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: "Pretendard";
+            background-color: #fafafa;
+            overflow-x: hidden;
+        }
+
+
+      header {
+         width: 100%;
+         height: 60px;
+         margin: 0 auto;
+         background-color: #F8F7EE;
+        }
+
+
+        li {
+            list-style-type: none;
+        }
+
+        #logo {
+            float: left;
+            margin-left: 110px;
+            margin-top: 5px;
+        }
+
+          #main_img {
+         display: block;
+         width: 100%;
+         height: 397px;
+         background-image: url("hib3.png");
+         background-repeat: no-repeat;
+         background-position: top center;
+         background-size: cover;
+         
+        }
+
+       #menu {
+          clear: both;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          background-color: #F8F7EE;
+          height: 50px;
+          margin: 0;
+          padding: 0;
+          gap: 40px;
+        }
+
+
+        #menu a {
+        text-decoration: none;
+        }
+        
+        .item {
+            margin: 0px 40px 0 40px;
+        }
+
+        .item a:link {
+            text-decoration: none;
+            color: #4E8682;
+            font-family: "AppleSDGothicNeoB00";
+            font-size: 22px;
+        }
+        .item a:visited {
+            text-decoration: none;
+            color: #B3B3B3;
+        }
+        .item a:hover {
+            text-decoration: none;
+            color: #CC7474;
+        }
+        .item a:active {
+            text-decoration: none;
+            color: black;
+        }
+
+         #contents {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+          #main_contents h3 {
+            font-size: 26px;    
+            margin-top: 150px;
+            text-align: center;
+            font-family: "Pretendard";
+            font-weight: 600;
+            color: #4E8682;
+        }
+
+         #main_contents h4 {
+            font-size: 18px;    
+            margin-top: 60px;
+            text-align: center;
+            font-family: "Pretendard";
+            font-weight: 500;
+            color: #4E8682;
+         }
+
+        #main_contents p {
+            margin-top: 40px;
+            font-size: 14px;
+            text-align: center;
+            font-family: "Pretendard";
+            font-weight: 400;
+            color: #121212;
+            margin-bottom: 80px;
+
+        }
+
+
+        h5 {
+            font-size: 28px;    
+            margin-top: 120px;
+            margin-left: 110px;
+            text-align: left;
+            font-family: "Pretendard";
+            font-weight: 600;
+            color: #2F5350;
+        }
+
+          .content-box {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-left: 110px;
+        margin-right: 110px;
+        align-items: flex-start;
+        gap: 80px;
+        width: fit-content;
+        }
+
+         .content-img {
+        width: 680px;
+        height: auto;
+        flex-shrink: 0;
+        }
+
+         .content-text h6 {
+            font-size: 20px;
+            text-align:left;
+            margin-top: 10px;
+            font-family: "Pretendard";
+            font-weight: 600;
+            color: #4E8682;
+        }
+
+        .content-text p {
+            margin-top: 30px;
+            font-size: 14px;
+            text-align:left;
+            font-family: "Pretendard";
+            font-weight: 400;
+            color: #121212;
+        }
+
+ .media-container { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    margin: 0 110px; 
+    
+ }
+
+       .media-box {
+     flex: 0 0 23%;  /* 4개 가로 정렬 */
+    text-align: center;
+}
+       
+       
+       .media-item {
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+
+   .media-box img,
+.media-box video {
+    height: 300px;
+    width: auto;          
+    object-fit: cover;
+    object-fit: cover;
+    display: block;        
+    margin: 0 auto; 
+}
+
+           .caption {
+            margin-top: 12px;
+         font-size: 14px;
+         color: #121212;
+          font-family: "Pretendard";
+        text-align: center;
+}
+
+
+
+
+
+
+      .footer {
+       width: 100%;
+       height: 200px;
+       background-color: #F8F7EE;
+       padding: 0;
+       margin-top: 120px;
+       display: flex;
+       align-items: flex-start;
+       flex-direction: column;
+       flex-wrap: wrap; 
+       box-sizing: border-box;
+       }
+
+       .footer-left {
+       display: flex;
+       flex-direction: column;
+       }
+
+       .footer-logo {
+        width: 150px;
+        float: left;
+        margin: 30px 110px  ;
+        display: block;
+       }
+
+       .footer-info p {
+        float: left;
+        margin-top: 5px;
+        margin-left: 110px;
+        color: #4E8682;
+        font-size: 12px;
+        }
+        
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;       
+  gap: 20px;
+}
+
+.footer-links li {
+    margin-top: 80px;
+    margin-left: 100px;
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #4E8682;
+  font-family: "AppleSDGothicNeoB00", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #CC7474;
+}
+        @media only screen and (max-width: 620px) {
+    .container {
+        display: flex;       
+        flex-direction: column;  
+    }
+
+   .item, #contents {
+        width: 100%;    
+        margin: 0;      
+    }
+
+     #main_img {
+        height: 200px; 
+        background-position: center center;
+    }
+
+     #menu {
+        flex-direction: column;   
+        height: auto;             
+        gap: 10px;              
+        padding: 20px 0;        
+    }
+
+    .item a {
+        font-size: 18px;       
+    }
+
+       header, section, footer {
+        width: 100%;
+    }
+
+     .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left {
+        margin: 0;
+    }
+
+    .footer-info p {
+        margin: 10px 0;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0 0 0;
+    }
+
+    .footer-links li {
+        margin: 0;
+    }
+
+
+
+      #logo {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        width: auto; 
+    }
+
+    #logo img {
+        width: 80%;       
+        max-width: 150px; 
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    p, h1, h2, h3, h4, h6 {
+        max-width: 100%;
+        line-height: 1.5;
+        word-break: keep-all;
+    }
+
+      h5 {
+        font-size: 28px;
+        margin-left: 20px;  
+        margin-right: 20px;
+        text-align: left;
+        margin-top: 60px;
+    }
+
+    img {
+        max-width: 100%;  
+        height: auto;
+    }
+
+ @media only screen and (max-width: 1024px) {
+    .media-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+      .media-container {
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+    }
+    .media-box img,
+    .media-box video {
+        width: 100%;   
+        height: auto; 
+        object-fit: contain;  
+    }
+    .media-item {
+        height: auto;  
+    }
+
+      .content-box {
+        flex-direction: column;
+        margin: 20px; 
+        gap: 20px;
+    }
+    .content-img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+        </style>
+
+</head>
+<body>
+    
+    <header>
+
+     <div id="logo">
+       <a href="index.html">
+         <img src="MAINLOGO.png"></a>
+     </div>
+
+     </header>
+
+   
+     <section id="main_img">
+    </section>
+
+    <ul id="menu">
+   <li class="item"><a href="Peacespot.html">Peace spot</a></li>
+    <li class="item"><a href="Play.html">Play</a></li>
+    <li class="item"><a href="peacepiece.html">Peace piece</a></li>
+    <li class="item"><a href="music.html">Music</a></li>
+    <li class="item"><a href="peacecource.html">Peace course</a></li>
+</ul>
+
+ <section id="content">
+        <div id="main_contents">
+            <h3>Play</h3>
+           <h4>좋아하는 일, 취미는 하루하루를 장식해줄 수 있는 것들</h4>
+            <p>좋아하는 일, 취미는 내가 잘하는 것이 아니어도 괜찮습니다. 정말 별게 아니어도 내가 하면서 즐거울 수 있고,<br>
+리프레쉬가 가능한 일이라면 무엇이든 좋아요. 저는 취미를 꼭 만들어두는 편입니다.<br>
+바라만봐도 행복하고 기분 좋은 일이 있다거나, 내가 삶에 열정이 떨어질 때, <br>
+한번 더 힘을 낼 수 있는 요소가 있다는 것이 중요하다고 생각하기 때문입니다.</p>
+        </div>
+    </section>
+
+     <div class="clear"></div>
+
+     <h5>#야구장 / 야구 경기 시청</h5>
+        
+        <div class="content-box">
+  <img src="play1.png" class="content-img">
+
+  <div class="content-text">
+    <h6>새로운 에너지를 얻을 수 있는 취미</h6>
+    <p>야구는 2025년 새로 생긴 나의 취미다. 친구 덕분에 경기를 보러 갔다가 그대로 같은 팀을 응원하게 되었다. 야구 경기는 끝날 때까지 예측할 수 없는 경기가 진행되어 
+        긴장감 넘치고 도파민이 분비된다. 또 야구장에서는 맛있는 간식을 먹는 일도 즐겁고, 공격 시간에 팬들이 하나가 되어 열심히 응원하는 것도 재밌다. 열정적으로 
+        팀을 응원하며, 내 삶에 즐길 수 있는 요소가 생겨서 야구를 보는 취미가 좋은 것 같다. </p> 
+        <p>그러나 KBO 팀을 응원하게 된다면 꼭 잘하는 팀을 응원하는 게 좋을 것 같다.
+        나같은 경우 팀이 전반기 3위로 가을야구에 갈 수 있는 가능성이 높아서 굉장히 열렬하게 응원했다가 급 추락으로 7등으로 마무리 되었다.. 
+        만약 화가 많고 스트레스를 잘 받는 성격이라면 야구는 취미로 추천하지 않는다. 농담이고 화도 났다가 다시 열정적으로 응원하고 끝까지 선수들 믿고 응원하는 맛도 있다. 
+        또 그렇게 마지막까지 응원하며 기적적인 역전이나 재미있는 플레이가 나오면 그 때 정말 도파민이 폭팔한다. 이러한 취미는 내가 살아가는 데에 더 힘이 되고 즐거워지게 하는 힘이
+        있다. 잠실 야구장은 음식이 맛있는 편은 아니라서 배달 음식으로 먹는 것을 추천하고, 문학 야구장은 크림새우가 정말 어마무시하게 맛있었다.. 그날 너무 허무하고 힘없게 졌는데 
+        입맛 없다고 말하며 크림새우 깨끗하게 긁어 먹었다.. 부산 사직 야구장은 쫄면이랑 만두가 정말 맛있었다!  
+    </p>
+  </div>
+</div>
+
+
+     <h5>#맛집 찾아 다니기</h5>
+        
+        <div class="content-box">
+  <img src="play2.png" class="content-img">
+
+  <div class="content-text">
+    <h6>먹기만 해도 행복한 사람입니다..</h6>
+    <p>나는 정말 먹는 것을 좋아해서 그냥 맛있는 거 먹을 때가 제일 행복한 것 같다. 먹기 위해 살아가고 먹기 위해 돈을 벌고 먹기 위해 배운다. 그렇기에 맛집 탐방은 나의 
+        사랑스러운 취미이다. 친구들과 놀 때, 다들 맛있는 것을 먹으러 다니기를 좋아하기 때문에 친구들과 자주 가는 것 같다. 주로 네이버 검색을 통해서 스크랩하거나, sns에서 
+        유명한 맛집을 가는 편이다. 인스타그램은 요즘 광고가 너무 많아져서 맛집 웨이팅 앱 (테이블링, 캐치테이블) 이나 카카오 지도 후기를 확인 해보고 가는 것을 추천한다.
+    </p>
+
+    <p>다양한 종류의 맛집들을 좋아한다. 노포 감성의 오래된 유명 맛집도 좋아하고, 다양한 음식을 먹을 수 있는 쿠우쿠우 같은 곳도 좋다. 분위기 좋은 양식집도 좋고,
+        트렌디한 퓨전음식 전문점, 중화요리 전문점이나 다이닝바도 좋다. 맛집에서 바로 만들어준 맛있는 음식을 먹으면 감탄이 절로 나오고 여기가 무릉도원 같아요~라고 말하게
+        된다. 친구들이랑은 잘 꾸며진 맛집을 더 자주 가는 편인데, 분위기도 좋아서 힐링되는데 맛있는 음식도 먹으면 힐링이 두배인 것 같다. 사실 취미라고 하기에 뭔가 민망한 
+        느낌도 있지만, 맛집을 찾아다니는 일은 생각보다 쉽지 않고, 온라인에 쏟아지는 광고 중 진짜 맛있는 곳을 찾아내 적절한 메뉴선정으로 맛있는 요리를 먹을 때의 기쁨이 생각보다 크다.
+        최근 맛있었던 맛집들 조금 적어보자면, 애몽 -홍대 / 데이릿 -성수 / 야상해 -이태원 / 만두란 -망원 / 올디스하우스 -을지로 / 필요의 방 -을지로 / 후발대 -부산서면 등이 있다.
+    </p>
+  </div>
+</div>
+
+
+<h5>#귀여운 것들</h5>
+
+<div class="media-container">
+
+    <div class="media-box">
+        <div class="media-item">
+            <img src="cute1.png">
+        </div>
+        <div class="caption">귀여운 걸 좋아해서 소품숍을 구경하는 것을 좋아한다. </div>
+    </div>
+
+    <div class="media-box">
+        <div class="media-item">
+          <img src="cute2.png">
+        </div>
+        <div class="caption">소품샵에서 산 귀여운 스티커, 엽서, 카드들</div>
+    </div>
+
+    <div class="media-box">
+        <div class="media-item">
+            <img src="cute3.png">
+        </div>
+        <div class="caption">가챠뽑기도 가끔 즐기는 취미다.</div>
+    </div>
+
+    <div class="media-box">
+        <div class="media-item">
+            <img src="cure4.png">
+        </div>
+        <div class="caption">미니 리락쿠마 무드등</div>
+    </div>
+
+</div>
+
+
+<h5>#요리</h5>
+
+<div class="media-container">
+
+    <div class="media-box">
+        <div class="media-item">
+            <img src="coo1.png">
+        </div>
+        <div class="caption">친구에게 만들어준 떡볶이. 맛있었다.</div>
+    </div>
+
+    <div class="media-box">
+        <div class="media-item">
+           <img src="coo2.png">
+        </div>
+        <div class="caption">요리는 누구에게 해주는 맛이 있는 것 같다. 친구 생일 날 미역국과 계란말이! </div>
+    </div>
+
+    <div class="media-box">
+        <div class="media-item">
+            <img src="coo3.png">
+        </div>
+        <div class="caption">팬케이크 장인이 되고싶었던 지난날</div>
+    </div>
+
+    <div class="media-box">
+        <div class="media-item">
+            <img src="coo4.png">
+        </div>
+        <div class="caption">엄마가 좋아해준 카프리제 샐러드</div>
+    </div>
+
+</div>
+
+    <div class="clear"></div>
+
+   <footer class="footer">
+    <div class="footer-left">
+    <img src="MAINLOGO.png" alt="logo" class="footer-logo">
+
+    <div class="footer-info">
+     <p>나의 힐링 포인트를 정리하고 현실에서 실현하며 내가 나의 행복한 시간을 만들 수 있도록<br>
+     Pieces of peace pile up and become my own era<br>
+      이 웹사이트는 개인 프로젝트용 페이지입니다.
+      © 2025 Peacera. All rights reserved.
+      이미지 출처: 직접촬영</p>
+    </div>
+    </div>
+ 
+    <ul class="footer-links">
+      <li><a href="Peacespot.html">Peace spot</a></li>
+      <li><a href="Play.html">Play</a></li>
+      <li><a href="peacepiece.html">Peace piece</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="peacecource.html">peace course</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        body {
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            background-image: url('backimg2.png');
+            /* background-size: cover; */
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: "Pretendard";
+            background-color: #fafafa;
+        }
+
+
+        header {
+         width: 100%;
+         height: 60px;
+         margin: 0 auto;
+         background-color: #F8F7EE;
+        }
+
+
+        li {
+            list-style-type: none;
+        }
+
+        #logo {
+            float: left;
+            margin-left: 110px;
+            margin-top: 5px;
+        }
+
+          #main_img {
+         display: block;
+         width: 100%;
+         height: 397px;
+         background-image: url("hib3.png");
+         background-repeat: no-repeat;
+         background-position: top center;
+         background-size: cover;
+         
+        }
+
+       #menu {
+          clear: both;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          background-color: #F8F7EE;
+          height: 50px;
+          margin: 0;
+          padding: 0;
+          gap: 40px;
+        }
+
+
+        #menu a {
+        text-decoration: none;
+        }
+        
+        .item {
+            margin: 0px 40px 0 40px;
+        }
+
+        .item a:link {
+            text-decoration: none;
+            color: #4E8682;
+            font-family: "AppleSDGothicNeoB00";
+            font-size: 22px;
+        }
+        .item a:visited {
+            text-decoration: none;
+            color: #2F5350;
+        }
+        .item a:hover {
+            text-decoration: none;
+            color: #CC7474;
+        }
+        .item a:active {
+            text-decoration: none;
+            color: black;
+        }
+
+         #contents {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+          #main_contents h3 {
+            font-size: 26px;    
+            margin-top: 150px;
+            text-align: center;
+            font-family: "Pretendard";
+            font-weight: 600;
+            color: #4E8682;
+        }
+
+         #main_contents h4 {
+            font-size: 18px;    
+            margin-top: 60px;
+            text-align: center;
+            font-family: "Pretendard";
+            font-weight: 500;
+            color: #4E8682;
+         }
+
+        #main_contents p {
+            margin-top: 40px;
+            font-size: 14px;
+            text-align: center;
+            font-family: "Pretendard";
+            font-weight: 400;
+            color: #121212;
+            margin-bottom: 80px;
+
+        }
+
+
+        h5 {
+            font-size: 28px;    
+            margin-top: 120px;
+            margin-left: 110px;
+            text-align: left;
+            font-family: "Pretendard";
+            font-weight: 600;
+            color: #2F5350;
+        }
+
+          .content-box {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-left: 110px;
+        margin-right: 110px;
+        align-items: flex-start;
+        gap: 80px;
+        width: fit-content;
+        }
+
+         .content-img {
+        width: 680px;
+        height: auto;
+        flex-shrink: 0;
+        }
+
+         .content-text h6 {
+            font-size: 20px;
+            text-align:left;
+            margin-top: 10px;
+            font-family: "Pretendard";
+            font-weight: 600;
+            color: #4E8682;
+        }
+
+        .content-text p {
+            margin-top: 30px;
+            font-size: 14px;
+            text-align:left;
+            font-family: "Pretendard";
+            font-weight: 400;
+            color: #121212;
+        }
+
+ .media-container { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    margin: 0 110px; 
+    
+ }
+
+       .media-box {
+     flex: 0 0 23%;  /* 4개 가로 정렬 */
+    text-align: center;
+}
+       
+       
+       .media-item {
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+
+   .media-box img,
+.media-box video {
+    height: 300px;
+    width: auto;          
+    object-fit: cover;
+    object-fit: cover;
+    display: block;        
+    margin: 0 auto; 
+}
+
+           .caption {
+            margin-top: 12px;
+         font-size: 14px;
+         color: #121212;
+          font-family: "Pretendard";
+        text-align: center;
+}
+
+
+
+
+
+
+      .footer {
+       width: 100%;
+       height: 200px;
+       background-color: #F8F7EE;
+       padding: 0;
+       margin-top: 120px;
+       display: flex;
+       align-items: flex-start;
+       flex-direction: column;
+       flex-wrap: wrap; 
+       box-sizing: border-box;
+       }
+
+       .footer-left {
+       display: flex;
+       flex-direction: column;
+       }
+
+       .footer-logo {
+        width: 150px;
+        float: left;
+        margin: 30px 110px  ;
+        display: block;
+       }
+
+       .footer-info p {
+        float: left;
+        margin-top: 5px;
+        margin-left: 110px;
+        color: #4E8682;
+        font-size: 12px;
+        }
+        
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;       
+  gap: 20px;
+}
+
+.footer-links li {
+    margin-top: 80px;
+    margin-left: 100px;
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #4E8682;
+  font-family: "AppleSDGothicNeoB00", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #CC7474;
+}
+        @media only screen and (max-width: 620px) {
+    .container {
+        display: flex;       
+        flex-direction: column;  
+    }
+
+   .item, #contents {
+        width: 100%;    
+        margin: 0;      
+    }
+
+     #main_img {
+        height: 200px; 
+        background-position: center center;
+    }
+
+     #menu {
+        flex-direction: column;   
+        height: auto;             
+        gap: 10px;              
+        padding: 20px 0;        
+    }
+
+    .item a {
+        font-size: 18px;       
+    }
+
+       header, section, footer {
+        width: 100%;
+    }
+
+     .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left {
+        margin: 0;
+    }
+
+    .footer-info p {
+        margin: 10px 0;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0 0 0;
+    }
+
+    .footer-links li {
+        margin: 0;
+    }
+
+
+
+      #logo {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        width: auto; 
+    }
+
+    #logo img {
+        width: 80%;        
+        max-width: 150px;  
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    p, h1, h2, h3, h4, h6 {
+        max-width: 100%;
+        line-height: 1.5;
+        word-break: keep-all;
+    }
+
+      h5 {
+        font-size: 28px;
+        margin-left: 20px;  
+        margin-right: 20px;
+        text-align: left;
+        margin-top: 60px;
+    }
+
+    img {
+        max-width: 100%;  
+        height: auto;
+    }
+
+ @media only screen and (max-width: 1024px) {
+    .media-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+      .media-container {
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+    }
+    .media-box img,
+    .media-box video {
+        width: 100%;   
+        height: auto; 
+        object-fit: contain;  
+    }
+    .media-item {
+        height: auto;  
+    }
+
+      .content-box {
+        flex-direction: column;
+        margin: 20px; 
+        gap: 20px;
+    }
+    .content-img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+        </style>
+
+</head>
+<body>
+    
+    <header>
+
+     <div id="logo">
+        <a href="index.html">
+         <img src="MAINLOGO.png"></a>
+     </div>
+
+     </header>
+
+   
+     <section id="main_img">
+    </section>
+
+    <ul id="menu">
+    <li class="item"><a href="Peacespot.html">Peace spot</a></li>
+    <li class="item"><a href="Play.html">Play</a></li>
+    <li class="item"><a href="peacepiece.html">Peace piece</a></li>
+    <li class="item"><a href="music.html">Music</a></li>
+    <li class="item"><a href="peacecource.html">Peace course</a></li>
+</ul>
+
+ <section id="content">
+        <div id="main_contents">
+            <h3>Peace piece</h3>
+           <h4>아주 작고 소소한 행복, 일상의 힐링 포인트들</h4>
+            <p>일상 속에서 적은 비용으로 작지만 확실한 행복 느낄 수 있는 포인트를 적어보았다.<br>
+               이런 소소한 행복 포인트가 있어야 삶이 재밌다. </p>
+        </div>
+    </section>
+
+     <div class="clear"></div>
+
+     <h5>#길거리 붕어빵</h5>
+        
+        <div class="content-box">
+  <img src="pp1.png" class="content-img">
+
+  <div class="content-text">
+    <h6>겨울, 최고의 행복을 누릴 수 있는 법</h6>
+    <p>길거리 푸드 트럭이나, 붕어빵은 뭔가 마주치면 뭔가 너무 행운 가득한 느낌이라서 그냥 그 실루엣만 봐도 신난다. 타코야키도 좋고 붕어빵도 좋고 닭꼬치도 좋고 순대도 좋지만 
+        겨울에는 아무래도 붕어빵이 최고인 것 같다. 바삭하고 살짝 달달 짭쪼롬한 반죽 옷 안에 따끈하고 달콤한 팥앙금이 싫을 리 없다. 요즘은 피자맛이나 콘치즈 맛,
+        다양한 맛을 파는 곳도 많아졌는데 콘치즈 붕어빵은 마주치면 사 먹어야 하는 저주에 걸렸다. (너무 맛있어서..)
+    </p>
+
+    <p>붕어빵 하면 어렸을 때 생각도 난다. 나는 어린 시절을 남한산에서 지내서 붕어빵을 파는 곳이 딱 한 곳이었는데, 눈이 펑펑 내리는 날 아빠랑 손잡고
+        붕어빵을 사러갔던 기억이 있다. 붕어빵 할아버지는 눈이 펑펑 오는 날에도 내가 올 것 같아서 굽고 있었다며 붕어빵을 늘 한마리 더 주셨던 것 같다. 
+      이런 기억이 있어서 붕어빵이 나에게 더 따듯하게 느껴지는 것 같다. 그리고 붕어빵은 그 추운 겨울에, 따뜻한 봉지를 품에 안고 뜨거워서 호호 불어먹는 그런
+      맛이 있다. 맛 자체가 힐링이고 이름도 귀엽다. 3마리에 2000원 정도로, 작은 비용 대비 확실하고 큰 행복을 얻을 수 있다. 타코야키 트럭은 요즘 배달이 가능한 타코야키 가게가
+      많아져서 잘 안보이는 느낌인데, 타코야키 트럭도 엄청나게 애정한다.. 다만 요즘은 적은 비용이 아니라 좀 고민 좀 되는 비용이라 아쉽다. 
+    </p>
+  </div>
+</div>
+
+
+
+
+ <h5>#산책</h5>
+        
+        <div class="content-box">
+  <img src="pp2.png" class="content-img">
+
+  <div class="content-text">
+    <h6>생각이 많아질 땐 산책하는게 상책</h6>
+    <p>나는 움직일 수록 기분도 몸도 편안해지는 타입이라, 좀 느낌이 답답하고 힐링이 필요할 떄는 산책을 나가려고 하는 편이다. 꼭 산책 해야해! 하며 유명한 산책
+        코스로 가는 건 아니고, 조금 피곤하고 기분이 안좋은 날은 일부러 버스에서 내려야 할 곳이 아니라 그 전에 내려서 걷거나, 집에 있던 날은 집 근처 편의점이나 
+        디저트를 파는 카페에 갔다 오겠다는 목적을 만들고 산책을 한다. 또 친구와 만났을 때, 산책하기 좋은 곳을 가게되면 1시간정도는 걷는 것 같다. 
+    </p>
+
+    <p>산책은 머리가 가벼워지는 느낌이라 좋다. 그리고 좀 웃기긴한데, 열심히 산다는 느낌? 조금 관리하며 살고 있다는 느낌이 들어서 그 느낌도 마음에 든다. 
+       한마디로 갓생 사는 기분이 든다. 또 건강해지는 느낌도 들고, 리프레쉬하는 느낌, 더 열심히 살고싶어지는 느낌이 들어서 좋다. 생각해보면 그냥 집 앞을 산책하는 것보다 나무가 있거나, 호수가 있는 곳을 걷는 게 더욱 기분 좋은 것 같다. 공기도 상쾌하고.
+       햇빛이 강한 날에는 밝고 상쾌해서 좋고, 흐린 날은 그 흐린 날만의 분위기가 있다. 저녁 쯤에 걷는 것도 좋아하는데, 좀 고요하기도 하고 밤이나 새벽 쯤에 맡는 공기 냄새가 
+       더 상쾌하고 시원해서 좋은 것 같다. 산책을 할 때는 노래를 듣는 것을 좋아한다. 속으로 흥얼거리며 걸으면 30분이 5분처럼 지나간다. 그래서 경치를 즐기는 산책을 할 때 보다 
+       집 앞이나 자주 걷는 거리일 때 노래를 듣는다. 참고로 옆에 사진은 석촌호수이다. 석촌호수는 벚꽃 시즌만 피하면 사람이 엄청 많은 곳은 아니라서 잠실에 갈 때 마다 
+       회전초밥이 된 것 처럼 3바퀴 정도는 걷는 것 같다. 오리도 있어서 귀엽고 호수도 좋고, 나무들도 푸른 느낌에 걷기 좋은 곳이다.
+    </p>
+  </div>
+</div>
+
+<h5>#그외 소확행</h5>
+
+<div class="media-container">
+
+    <div class="media-box">
+        <div class="media-item">
+            <img src="reo.png">
+        </div>
+        <div class="caption">지리산에 있는 레오 사진 보기. 안 작고 엄청 큰 행복이다..</div>
+    </div>
+
+    <div class="media-box">
+        <div class="media-item">
+           <img src="sky.png">
+        </div>
+        <div class="caption">걷다가 하늘보기! 하늘 이뻐서 기분 좋아질 때가 정말 많다.</div>
+    </div>
+
+    <div class="media-box">
+        <div class="media-item">
+            <img src="lottew.png">
+        </div>
+        <div class="caption">놀이공원 문 닫을 때까지 있기</div>
+    </div>
+
+    <div class="media-box">
+        <div class="media-item">
+            <img src="ramen.png">
+        </div>
+        <div class="caption">엄청 잘 끓인 불닭 먹기</div>
+    </div>
+
+</div>
+
+
+
+    <div class="clear"></div>
+
+   <footer class="footer">
+    <div class="footer-left">
+    <img src="MAINLOGO.png" alt="logo" class="footer-logo">
+
+    <div class="footer-info">
+     <p>나의 힐링 포인트를 정리하고 현실에서 실현하며 내가 나의 행복한 시간을 만들 수 있도록<br>
+     Pieces of peace pile up and become my own era<br>
+      이 웹사이트는 개인 프로젝트용 페이지입니다.
+      © 2025 Peacera. All rights reserved.
+      이미지 출처: 직접촬영</p>
+    </div>
+    </div>
+ 
+    <ul class="footer-links">
+     <li><a href="Peacespot.html">Peace spot</a></li>
+      <li><a href="Play.html">Play</a></li>
+      <li><a href="peacepiece.html">Peace piece</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="peacecource.html">peace course</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>

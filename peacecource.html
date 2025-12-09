@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        body {
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            background-image: url('backimg2.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: "Pretendard";
+            background-color: #fafafa;
+            overflow-x: hidden;
+        }
+
+
+        header {
+         width: 100%;
+         height: 60px;
+         margin: 0 auto;
+         background-color: #F8F7EE;
+        }
+
+
+        li {
+            list-style-type: none;
+        }
+
+        #logo {
+            float: left;
+            margin-left: 110px;
+            margin-top: 5px;
+        }
+
+          #main_img {
+         display: block;
+         width: 100%;
+         height: 397px;
+         background-image: url("hib3.png");
+         background-repeat: no-repeat;
+         background-position: top center;
+         background-size: cover;
+         
+        }
+
+       #menu {
+          clear: both;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          background-color: #F8F7EE;
+          height: 50px;
+          margin: 0;
+          padding: 0;
+          gap: 40px;
+        }
+
+
+        #menu a {
+        text-decoration: none;
+        }
+        
+        .item {
+            margin: 0px 40px 0 40px;
+        }
+
+        .item a:link {
+            text-decoration: none;
+            color: #4E8682;
+            font-family: "AppleSDGothicNeoB00";
+            font-size: 22px;
+        }
+        .item a:visited {
+            text-decoration: none;
+            color: #B3B3B3;
+        }
+        .item a:hover {
+            text-decoration: none;
+            color: #CC7474;
+        }
+        .item a:active {
+            text-decoration: none;
+            color: black;
+        }
+
+         #contents {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+          #main_contents h3 {
+            font-size: 26px;    
+            margin-top: 150px;
+            text-align: center;
+            font-family: "Pretendard";
+            font-weight: 600;
+            color: #4E8682;
+        }
+
+         #main_contents h4 {
+            font-size: 18px;    
+            margin-top: 60px;
+            text-align: center;
+            font-family: "Pretendard";
+            font-weight: 500;
+            color: #4E8682;
+         }
+
+        #main_contents p {
+            margin-top: 40px;
+            font-size: 14px;
+            text-align: center;
+            font-family: "Pretendard";
+            font-weight: 400;
+            color: #121212;
+            margin-bottom: 80px;
+
+        }
+
+
+        h5 {
+            font-size: 28px;    
+            margin-top: 120px;
+            margin-left: 110px;
+            text-align: left;
+            font-family: "Pretendard";
+            font-weight: 600;
+            color: #2F5350;
+        }
+
+          .content-box {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-left: 110px;
+        margin-right: 110px;
+        align-items: flex-start;
+        gap: 80px;
+        width: fit-content;
+        }
+
+         .content-img {
+        width: 680px;
+        height: auto;
+        flex-shrink: 0;
+        }
+
+         .content-text h6 {
+            font-size: 20px;
+            text-align:left;
+            margin-top: 10px;
+            font-family: "Pretendard";
+            font-weight: 600;
+            color: #4E8682;
+        }
+
+        .content-text p {
+            margin-top: 30px;
+            font-size: 14px;
+            text-align:left;
+            font-family: "Pretendard";
+            font-weight: 400;
+            color: #121212;
+        }
+
+        .audio-player {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    margin-top: 20px;         
+}
+
+ .audio-player audio {
+    width: 500px;   
+    height: 80px;  
+    border-radius: 5px;  
+}
+
+
+
+
+
+
+      .footer {
+       width: 100%;
+       height: 200px;
+       background-color: #F8F7EE;
+       padding: 0;
+       margin-top: 120px;
+       display: flex;
+       align-items: flex-start;
+       flex-direction: column;
+       flex-wrap: wrap; 
+       box-sizing: border-box;
+       }
+
+       .footer-left {
+       display: flex;
+       flex-direction: column;
+       }
+
+       .footer-logo {
+        width: 150px;
+        float: left;
+        margin: 30px 110px  ;
+        display: block;
+       }
+
+       .footer-info p {
+        float: left;
+        margin-top: 5px;
+        margin-left: 110px;
+        color: #4E8682;
+        font-size: 12px;
+        }
+        
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;       
+  gap: 20px;
+}
+
+.footer-links li {
+    margin-top: 80px;
+    margin-left: 100px;
+  margin-bottom: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #4E8682;
+  font-family: "AppleSDGothicNeoB00", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #CC7474;
+}
+        @media only screen and (max-width: 620px) {
+    .container {
+        display: flex;       
+        flex-direction: column;  
+    }
+
+   .item, #contents {
+        width: 100%;    
+        margin: 0;      
+    }
+
+     #main_img {
+        height: 200px; 
+        background-position: center center;
+    }
+
+     #menu {
+        flex-direction: column;   
+        height: auto;             
+        gap: 10px;              
+        padding: 20px 0;        
+    }
+
+    .item a {
+        font-size: 18px;       
+    }
+
+       header, section, footer {
+        width: 100%;
+    }
+
+     .footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left {
+        margin: 0;
+    }
+
+    .footer-info p {
+        margin: 10px 0;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0 0 0;
+    }
+
+    .footer-links li {
+        margin: 0;
+    }
+
+
+
+      #logo {
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+        width: auto; 
+    }
+
+    #logo img {
+        width: 80%;        
+        max-width: 150px;  
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    p, h1, h2, h3, h4, h6 {
+        max-width: 100%;
+        line-height: 1.5;
+        word-break: keep-all;
+    }
+
+      h5 {
+        font-size: 28px;
+        margin-left: 20px;  
+        margin-right: 20px;
+        text-align: left;
+        margin-top: 60px;
+    }
+
+    img {
+        max-width: 100%;  
+        height: auto;
+    }
+
+ @media only screen and (max-width: 1024px) {
+    .media-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+      .media-container {
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+    }
+    .media-box img,
+    .media-box video {
+        width: 100%;   
+        height: auto; 
+        object-fit: contain;  
+    }
+    .media-item {
+        height: auto;  
+    }
+
+    
+
+      .content-box {
+        flex-direction: column;
+        margin: 20px; 
+        gap: 20px;
+    }
+    .content-img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+        </style>
+
+</head>
+<body>
+    
+    <header>
+
+     <div id="logo">
+        <a href="index.html">
+         <img src="MAINLOGO.png"></a>
+     </div>
+
+     </header>
+
+   
+     <section id="main_img">
+    </section>
+
+    <ul id="menu">
+    <li class="item"><a href="Peacespot.html">Peace spot</a></li>
+    <li class="item"><a href="Play.html">Play</a></li>
+    <li class="item"><a href="peacepiece.html">Peace piece</a></li>
+    <li class="item"><a href="music.html">Music</a></li>
+    <li class="item"><a href="peacecource.html">Peace course</a></li>
+</ul>
+
+ <section id="content">
+        <div id="main_contents">
+            <h3>Peace course</h3>
+           <h4>하루를 행복하게 보내는 최고의 코스</h4>
+            <p>중요한 건 우선 마음. 기분이 좋지 않던 요즘이라도 
+오늘은 행복한 힐링 코스하러 가니까 행복하게~ 라고 생각하기.<br>
+    날씨가 좋지 않아도 그것도 추억이라고 생각하며 럭키걸 마인드 갖기.</p>
+        </div>
+    </section>
+
+     <div class="clear"></div>
+
+     <h5>#한강 하루 코스</h5>
+        
+        <div class="content-box">
+  <img src="pc1.png" class="content-img">
+
+  <div class="content-text">
+    <h6>한강에서 물멍</h6>
+    <p>드는 비용: 교통비 + 한강라면 5000원 + 배달 메뉴 15000원  총 23000원 예상<br>
+저렴한 비용 대비 행복한 하루를 보낼 수 있는 코스이다. 나는 꼭 음료 한잔을 더 마시고 타코야키나 닭꼬치를 보면 그냥 지나치지를 못해서 조금 더 많이 나오긴 한다.
+한강 물결의 흐름을 보면 마음이 차분해지고, 편안해지는 기분을 느낄 수 있다. 나는 꼭 한강을 점심 조금 넘어서 가서 밤까지 있는 편인데, 시간대에 따라 다른
+한강의 매력을 하루에 느끼고 싶어서이다.  </p>
+
+<P>1시에 도착하게 한강을 가서, 점심으로 타코야키와 한강라면을 먹는다. 한강이 보이는 돌계단에 앉아서 먹는 것을 가장 추천한다. 제일 낭만 있는 느낌이기 떄문이다.
+    2시정도 됐을 때, 돗자리를 펴서 잠시 누워서 쉰다. (가끔 개미가 많은 곳도 있으니 주의해야 한다..) 하늘을 보며 힐링하고, 친구와 의미없는 이야기들을 하며 시간을 보낸다.
+    4시까지 쉬다가, 천천히 산책한다. 자전거를 타는 것도 추천한다. 친구와 2인 자전거를 타면 조금 더 특별하고 재미있는 하루가 될 수 있다. 
+    5시쯤 저녁을 어떻게 할지 고민해보면 좋다. 한강에서 배달로 음식을 시켜 먹는 것도 특별하고 재미있는 경험이어서 추천한다. 나는 닭발과 주먹밥을 시켜먹었다. 
+    너무 맛있었다. 6시 ~7시에 배달 음식이 도착할 수 있도록 주문하고, 산책을 즐기거나 자전거를 타거나, 돗자리에 앉아 지는 해를 바라보거나, 흔들의자에 앉아있는다.
+ 
+</P>
+  </div>
+</div>
+        
+        <div class="content-box">
+  <img src="pc2.png" class="content-img">
+
+  <div class="content-text">
+    <h6>한강, 야외의 맛</h6>
+    <p>6~7시에 저녁을 먹는다. 귀여운 무드등이 함께하면 더 즐거운 시간이 된다. 야외에서 먹는거라 가을~ 초겨울 쯤에는 추워서 조금 덜덜 떨면서 먹게 되는데
+       뭔가 더 감성적이고 추억이 될 것 같은 느낌이라 좋았다. 그러나 12월부터는 저녁을 밖에서 먹는 것을 추천하지 않는다. 닭발이 20분만에 차가워지는 슬픈 일이 
+       생기고, 내 몸도 덜덜 떨리기 때문이다.. 8시에 먹었던 음식을 잘 치우고, 이제 본격적인 밤 산책을 시작한다. 밤에는 또 다른 매력이 있다. 우선 조용하고, 
+       한강에 도시의 불빛들이 비치는 것도 꽤 이쁘다. 감성적인 느낌이 된다. 걷고 걷다가 집에 가기 아쉬운 시간 쯤, 10시에 지하철을 타러 가면 된다.
+       조금은 아쉬워야 다음이 기대되기 때문이다. 사실 나는 늘 아쉬워서 결국 최대한 늦게 집으로 돌아가기도 한다. 그래도 즐겁다..
+    </p>
+
+    <P>한강에서 보내는 하루를 여유로움 보다 알차게 보내고 싶다면 잠실에서 분위기 좋은 점심을 먹고 석촌호수를 산책한 뒤 4시에 잠실 한강을 가거나, 
+        망원에서 점심, 혹은 저녁을 먹은 후 망원 한강으로 가볍게 산책을 가는 것도 추천한다. 아니면 낮에 한강에서 피크닉을 즐기고 저녁 때에 다른 장소로 이동해도
+        알차고 여유롭고 행복한 하루를 보낼 수 있다.
+    </P>
+  </div>
+</div>
+
+
+ <section id="content">
+        <div id="main_contents">
+           <h3>peace course 2</h3>
+           <h4>마음 울적한 날 코스</h4>
+            <p>마음이 안 울적한 날, 기쁜 날에도 추천한다. 엄청 재미있고 신나기보다 <br>
+    하루가 아늑하고 즐겁게 지나가는 코스이다. </p>
+        </div>
+    </section>
+
+<div class="audio-player">
+    <audio controls autoplay>
+        <source src="cocktail love.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+
+     <div class="clear"></div>
+
+     <h5>#마음 울적한 날엔 </h5>
+        
+        <div class="content-box">
+  <img src="pc3.png" class="content-img">
+
+  <div class="content-text">
+    <h6>거리를 걸어보고</h6>
+    <p>최근들어 북촌, 서촌을 자주 갔는데 참 좋았다. 외국인 관광객이 꽤 많아 걷기에 좁은 거리도 있었지만, 걷기에 좋게 만든 넓은 인도를 걸을 때는 괜찮았던 것 같다. 
+        특히 가을에는 단풍이 너무 예뻐서 거리를 걷기만 해도 기분이 엄청 좋아졌다. 어떤 날은 북촌에서 걷는데 갑자기 소나기가 막 내려서 겉옷을 머리에 쓰고 막 뛰어서 
+        나무 밑에 숨었는데, 조금씩 줄어들더니 무지개가 떠서 좋았다. 북촌은 한옥으로 이루어진 가게들, 집들이 있어서 거리를 더 재미있게 걸을 수 있고, 카페에서도 조금 더
+        한국스러운 메뉴들을 팔고 있어서 색다르고 좋았다. 
+    </p>
+
+    <p>찾아보니, 빈티지 숍도 있고 주변에 걸을 만한 거리가 많아서 걷기 좋은 날에 가보면 좋을 것 같다. 나는 북촌에사 을지로까지 걸어가서 저녁에 청계천을 걷는 것을 좋아한다.
+       그렇게 걸어보는 것도 나쁘지 않을 것 같다. 그리고 주변에 경복궁이나, 창덕궁 등 구경 할 수 있는 역사적인 건물도 있어서 좋다. 경복궁만 가면 갑자기 눈물이 나올 것 같고 가슴이
+       아파서 나는 자주 가지는 않는다. 안에 들어가지 않고 성벽 주위를 걷는 것도 추천한다. 
+    </p>
+  </div>
+</div>
+
+
+
+        
+        <div class="content-box">
+  <img src="pc4.png" class="content-img">
+
+  <div class="content-text">
+    <h6>향기로운 칵테일에 취해도 보고</h6>
+    <p>서촌의 칵테일 바인데, 이름은 까먹었다. 검색했을 때 나름 분위기 좋고 맛있어 보이는 바가 많았던 것 같다. 나는 칵테일을 아주 좋아하지는 않는대,
+        또 이쁜 잔에 이쁜 색에 달달한 술을 마시면 기분이 좋긴 하다. 칵테일은 가격이 있는 편이라 2잔 이상은 잘 안마시게 되는 것 같다. 취하게 마시려면 정말 도수 높은 칵테일
+    3잔 정도 마셔야 할 것 같은데, 일단 아무리 싸도 5만원은 넘게 들 것 같다. 뭐든 과하면 좋지 않으니, 칵테일에 취하진 말고 칵테일 한잔의 여유? 위로를 마시는 걸로 하면 좋을 듯 하다. </p>
+    <p>술을 못 마신다면 무알콜 칵테일을 추천한다. 전에 무알콜 모히토가 너무 맛있어서 기분이 좋아진 적이 있었다. 칵테일 바에서 내가 좋아하는 메뉴는 피치 크러쉬이다. 
+        어디에서 먹어도 실패할 확률이 낮은 메뉴인 것 같다. 그리고 색이 이쁜 걸 좋아해서 설명보다는 그냥 사진으로 감으로 마시는 걸 즐기는 편이다. 
+        달달하면서도 씁쓸한 맛을 좋아하는데, 칵테일을 안먹은지 1년 정도 된 것 같아서 기억이 잘 나지 않는다.. 비치블루, 피치 크러쉬 이런 메뉴들이 이쁘고 맛도 
+        괜찮아서 그냥 첫잔으로 시켰던 것 같다. 돈이 없어지면 스트레스 받을 수 있으니 적당히 마셔야한다. 
+    </p>
+</div>
+</div>
+
+
+        
+        <div class="content-box">
+  <img src="pc5.png" class="content-img">
+
+  <div class="content-text">
+    <h6>한편의 시가 있는 전시회장도 가고</h6>
+    <p>안국역, 북촌 서촌 근처에 국립현대 미술관이 있어서 전시 일정을 확인하고 전시륿 보러가는 코스로 매우 좋다. 또 근처에 부암동 쪽이나 북촌 쪽에도 미술관, 전시가 자주 열린다.
+       나는 전시회를 성인 이전에는 그렇게 많이 다니지는 않았다. 초등학생 때는 어리기도 하고 아무것도 모르니까 재미없게 느껴져서 잘 안다녔고 고등학생부터는 학업에 바빠지니 
+       전시를 보러 갈 일이 딱히 없었다. 20살이 되고 나서 친구들과 관심있는 전시를 보러가게 된 것 같다. 이해는 못해도 그냥 감상하고 영감을 얻고.. 
+    </p>
+ 
+    <p>나는 개인적으로 작가의 개인전을 가장 좋아하는데, 스토리가 보이고 어떤 메시지를 보내고 있는지 생각하며 보게 되어서 좋았던 것 같다. 작가들의 작품들을 모아서 열린 전시회도 
+        보는 재미가 있긴 하지만, 개인전에 비해 이해가 잘 안돼는 부분이 많아서 흥미가 조금 떨어질 때가 많기 떄문이다. 대학교 졸업 전시회는 최대한 가려고 하는 편인데, 
+        이번에는 시험기간 전에 3군데만 가보게 되어서 아쉽다. 전시회장을 보면 사실 마음, 생각이 정리된다기 보다는 계속 더 생각하게 되는데, 이런 생각을 계속해서 
+        하는 시간도 어떻게보면 꼭 필요한 시간인 것 같고.. 또 생각 하는 것이 긍정적인 에너지를 만들기도 하는 것 같다. 
+    </p>
+  </div>
+</div>
+
+
+    <div class="clear"></div>
+
+   <footer class="footer">
+    <div class="footer-left">
+    <img src="MAINLOGO.png" alt="logo" class="footer-logo">
+
+    <div class="footer-info">
+     <p>나의 힐링 포인트를 정리하고 현실에서 실현하며 내가 나의 행복한 시간을 만들 수 있도록<br>
+     Pieces of peace pile up and become my own era<br>
+      이 웹사이트는 개인 프로젝트용 페이지입니다.
+      © 2025 Peacera. All rights reserved.
+      이미지 출처: 직접촬영</p>
+    </div>
+    </div>
+ 
+    <ul class="footer-links">
+      <li><a href="Peacespot.html">Peace spot</a></li>
+      <li><a href="Play.html">Play</a></li>
+      <li><a href="peacepiece.html">Peace piece</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="peacecource.html">peace course</a></li>
+    </ul>
+  </div>
+</footer>
+</body>
+</html>
